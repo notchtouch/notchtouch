@@ -21,6 +21,8 @@
   <img src="assets/banner.png" alt="The NotchTouch island open below the MacBook notch, playing music">
 </p>
 
+> **Beta.** NotchTouch is at version 0.0.1. It works day to day, but you may run into rough edges. If something breaks, please [report it](#report-a-bug).
+
 This repository holds the documentation, the downloads and the issue tracker for NotchTouch. The source code is private.
 
 ## Contents
@@ -38,6 +40,7 @@ This repository holds the documentation, the downloads and the issue tracker for
 - [Permissions](#permissions)
 - [The app is in Portuguese](#the-app-is-in-portuguese)
 - [Update](#update)
+- [Verify your download](#verify-your-download)
 - [Uninstall](#uninstall)
 - [Troubleshooting](#troubleshooting)
 - [Report a bug](#report-a-bug)
@@ -216,6 +219,16 @@ For now the interface is in Brazilian Portuguese. Most controls are icons, and t
 macOS may ask you to confirm with **Open Anyway** again. Your shelf, script and settings are kept.
 
 To see which version you have, select NotchTouch in Applications and press **⌘I** (Get Info).
+
+## Verify your download
+
+Each release lists the SHA-256 checksum of `NotchTouch.dmg`. To make sure the file you downloaded is the original, run this in Terminal and compare the result with the one on the [release page](https://github.com/notchtouch/notchtouch/releases/latest):
+
+```bash
+shasum -a 256 ~/Downloads/NotchTouch.dmg
+```
+
+Only download NotchTouch from this repository.
 
 ## Uninstall
 
