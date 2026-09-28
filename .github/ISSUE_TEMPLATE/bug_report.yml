@@ -1,0 +1,58 @@
+name: Bug report
+description: Something in NotchTouch isn't working as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Every report is read and analyzed.
+        Please check the [existing issues](https://github.com/notchtouch/notchtouch/issues) first, and leave out personal data you don't want to share (calendar details, file names).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: One step per line, starting from a fresh launch if you can.
+      placeholder: |
+        1. Play a song in Spotify
+        2. Hover over the notch
+        3. Click the next button
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: |
+        Attach a screenshot or a short screen recording that shows the problem (press ⇧⌘5 to record the screen). Drag the file into this box.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: NotchTouch version
+      description: Select NotchTouch in Applications and press ⌘I.
+      placeholder: "1.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac model
+      description: Apple menu › About This Mac.
+      placeholder: "macOS 26.1, MacBook Pro 14-inch (M4)"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional)
+      description: |
+        Right after the problem happens, run this in Terminal and attach the file:
+        `log show --last 10m --predicate 'subsystem == "com.sharkzy.notchtouch"' > notchtouch-log.txt`

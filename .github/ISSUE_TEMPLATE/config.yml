@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How to use NotchTouch
+    url: https://github.com/notchtouch/notchtouch#readme
+    about: Install steps, features, permissions and troubleshooting.
